@@ -1,6 +1,6 @@
 #include <iostream>
 
-const char gStageData[] ="\
+const char gStageData[] = "\
 ########\n\
 # .. p #\n\
 # oo   #\n\
@@ -201,5 +201,4 @@ bool Checkclear(const Object* s, int w, int h)
 		}
 	}
 	return true;
-	
 }
