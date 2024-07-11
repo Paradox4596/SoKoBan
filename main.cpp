@@ -160,10 +160,12 @@ void Update(Object* s, char input, int w, int h)
 	int tx = x + dx;
 	int ty = y + dy;
 
-	if (tx<0 || ty < 0 || tx >= w || ty >= h)
+	if (tx < 0 || ty < 0 || tx >= w || ty >= h)
 	{
+		std::cerr << "Invalid player position" << std::endl;
 		return;
 	}
+
 	int p = y * w + x;
 	int tp = ty * w + tx;
 	if (s[tp] == OBJ_SPACE || s[tp] == OBJ_GOAL)
